@@ -153,13 +153,13 @@ const graph = [
 [6.10, 5.00, 4.80, 5.50, 3.80, 4.70, 4.10, 3.00, 4.60, 3.60, 2.80, 5.30, 6.00, 4.50 -1]
 ];
 
-//The value will be shown in the console
-
 const path_size = 16;
 const position = setPosition() - 1;
 let direction_arr = Array(path_size).fill(-1);
 setInitialPositions(position, path_size);
 const value = getBestPosition().toFixed(2);
+
+//The value will be shown in the console
 console.log("-------------------------------------- Resultado --------------------------------------");
 printResult("Valor Final");
 console.log(`Valor do Menor Caminho: ${value}`);
