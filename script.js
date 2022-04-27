@@ -1,5 +1,5 @@
 const setPosition = () => {
-  let value = Number(window.prompt("Insira o tamanho de linhas e colunas da matriz: "));
+  let value = Number(window.prompt(`Insira um ponto de origem e destino (maior que 0 e menor que ${graph.length + 1})`));
 
   if(value > graph.length || value < 1) {
     window.alert(`Insira um ponto de origem e destino, maior que 0 e menor que ${graph.length + 1}`);
@@ -152,6 +152,8 @@ const graph = [
 [8.80, 8.10, 7.60, 7.80, 9.20, 9.10, 8.50, 5.60, 4.30, 3.80, 2.70, 3.20, 6.00, -1, 4.70],
 [6.10, 5.00, 4.80, 5.50, 3.80, 4.70, 4.10, 3.00, 4.60, 3.60, 2.80, 5.30, 6.00, 4.50 -1]
 ];
+
+//The value will be shown in the console
 
 const path_size = 16;
 const position = setPosition() - 1;
